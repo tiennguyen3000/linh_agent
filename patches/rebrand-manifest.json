@@ -1,0 +1,134 @@
+{
+  "linh_version": "1.0.0",
+  "pristine_base": "/Users/tiennk/.hermes/hermes-agent",
+  "edits": [
+    {
+      "file": "agent/prompt_builder.py",
+      "why": "system-prompt identity"
+    },
+    {
+      "file": "agent/prompt_builder.py",
+      "why": "self-knowledge pointer"
+    },
+    {
+      "file": "agent/prompt_builder.py",
+      "why": "self-knowledge pointer (no skills)"
+    },
+    {
+      "file": "agent/system_prompt.py",
+      "why": "Linh skill drives guidance variant"
+    },
+    {
+      "file": "hermes_cli/default_soul.py",
+      "why": "seed comment truth"
+    },
+    {
+      "file": "hermes_cli/default_soul.py",
+      "why": "seeded SOUL.md text"
+    },
+    {
+      "file": "hermes_cli/default_soul.py",
+      "why": "seeded SOUL.md scaffold"
+    },
+    {
+      "file": "hermes_cli/banner.py",
+      "why": "import Linh branding"
+    },
+    {
+      "file": "hermes_cli/banner.py",
+      "why": "banner hero art"
+    },
+    {
+      "file": "hermes_cli/banner.py",
+      "why": "banner wordmark logo"
+    },
+    {
+      "file": "hermes_cli/banner.py",
+      "why": "banner version label"
+    },
+    {
+      "file": "hermes_cli/skin_engine.py",
+      "why": "import Linh branding"
+    },
+    {
+      "file": "hermes_cli/skin_engine.py",
+      "why": "default-skin branding"
+    },
+    {
+      "file": "hermes_constants.py",
+      "why": "LINH_HOME override"
+    },
+    {
+      "file": "cli.py",
+      "why": "banner tiny line"
+    },
+    {
+      "file": "cli.py",
+      "why": "banner tiny line (fallback)"
+    },
+    {
+      "file": "cli.py",
+      "why": "fast-startup banner version"
+    },
+    {
+      "file": "cli.py",
+      "why": "welcome fallback"
+    },
+    {
+      "file": "cli.py",
+      "why": "module docstring"
+    },
+    {
+      "file": "cli.py",
+      "why": "class docstring"
+    },
+    {
+      "file": "cli.py",
+      "why": "help text"
+    },
+    {
+      "file": "agent/skill_utils.py",
+      "why": "Linh skill is essential"
+    },
+    {
+      "file": "tests/hermes_cli/test_banner.py",
+      "why": "test alignment: banner title identity"
+    },
+    {
+      "file": "tests/hermes_cli/test_skin_engine.py",
+      "why": "test alignment: default-skin agent name"
+    },
+    {
+      "file": "tests/hermes_cli/test_startup_fast_guards.py",
+      "why": "test alignment: fast --version identity"
+    },
+    {
+      "file": "tests/hermes_cli/test_startup_fast_guards.py",
+      "why": "test alignment: fast --version identity (termux path)"
+    },
+    {
+      "file": "tests/agent/test_prompt_builder.py",
+      "why": "test alignment: seeded default persona"
+    },
+    {
+      "file": "tests/agent/test_phantom_tool_references.py",
+      "why": "test alignment: guidance points at the Linh skill"
+    }
+  ],
+  "applied_this_run": [],
+  "files_in_patch": [
+    "agent/prompt_builder.py",
+    "agent/skill_utils.py",
+    "agent/system_prompt.py",
+    "cli.py",
+    "hermes_cli/banner.py",
+    "hermes_cli/default_soul.py",
+    "hermes_cli/skin_engine.py",
+    "hermes_constants.py",
+    "tests/agent/test_phantom_tool_references.py",
+    "tests/agent/test_prompt_builder.py",
+    "tests/hermes_cli/test_banner.py",
+    "tests/hermes_cli/test_skin_engine.py",
+    "tests/hermes_cli/test_startup_fast_guards.py"
+  ]
+}

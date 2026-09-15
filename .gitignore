@@ -1,0 +1,9 @@
+# Linh distribution repo — tracks the Linh layer only.
+# core/ is the runtime fork and has its OWN git repo (with an `upstream` remote):
+# version it there, not here.
+core/
+venv/
+__pycache__/
+*.pyc
+*.pyo
+.DS_Store

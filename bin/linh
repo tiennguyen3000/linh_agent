@@ -1,0 +1,26 @@
+#!/usr/bin/env bash
+# Linh launcher — the `linh` command.
+#
+# Sets the Linh runtime identity (home + core source), then hands off to the Linh
+# package on Linh's own venv. Everything downstream (core imports, sessions, logs,
+# skills, memory) resolves under LINH_HOME, never ~/.hermes.
+set -euo pipefail
+
+# Resolve this script's real location: invoked through a symlink (e.g.
+# ~/.local/bin/linh) BASH_SOURCE points at the link, which would make ROOT the
+# symlink's parent instead of the distribution.
+_SRC="${BASH_SOURCE[0]}"
+while [ -L "$_SRC" ]; do
+  _DIR="$(cd -P "$(dirname "$_SRC")" && pwd)"
+  _SRC="$(readlink "$_SRC")"
+  [[ "$_SRC" != /* ]] && _SRC="$_DIR/$_SRC"
+done
+LINH_ROOT="$(cd -P "$(dirname "$_SRC")/.." && pwd)"
+export LINH_ROOT
+export LINH_HOME="${LINH_HOME:-$HOME/.linh}"
+# The core implements the home mechanism as HERMES_HOME; LINH_HOME is canonical and
+# the patched core honours it first (hermes_constants.get_hermes_home).
+export HERMES_HOME="$LINH_HOME"
+unset PYTHONPATH PYTHONHOME
+
+exec "$LINH_ROOT/venv/bin/python3" "$LINH_ROOT/bin/linh_entry.py" "$@"

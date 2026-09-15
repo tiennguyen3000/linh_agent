@@ -1,0 +1,79 @@
+name: linh
+description: "Linh — Personal AI Engineering Agent of Linh Nguyen (cyan circuit palette)"
+colors:
+  banner_border: "#2563EB"
+  banner_title: "#38BDF8"
+  banner_accent: "#22D3EE"
+  banner_dim: "#1D4ED8"
+  banner_text: "#E0F2FE"
+  ui_accent: "#38BDF8"
+  ui_label: "#7DD3FC"
+  ui_ok: "#4ADE80"
+  ui_error: "#F87171"
+  ui_warn: "#FBBF24"
+  prompt: "#E0F2FE"
+  input_rule: "#2563EB"
+  response_border: "#38BDF8"
+  status_bar_bg: "#0B1220"
+  status_bar_text: "#94A3B8"
+  status_bar_strong: "#38BDF8"
+  status_bar_dim: "#475569"
+  status_bar_good: "#4ADE80"
+  status_bar_warn: "#FBBF24"
+  status_bar_bad: "#FB923C"
+  status_bar_critical: "#F87171"
+  session_label: "#7DD3FC"
+  session_border: "#475569"
+  completion_menu_bg: "#0B1220"
+  completion_menu_current_bg: "#1E3A8A"
+  selection_bg: "#1E40AF"
+  shell_dollar: "#22D3EE"
+  voice_status_bg: "#0B1220"
+light_colors:
+  banner_title: "#0369A1"
+  banner_accent: "#0E7490"
+  banner_dim: "#1D4ED8"
+  banner_text: "#0F172A"
+  ui_accent: "#0369A1"
+  ui_label: "#075985"
+  prompt: "#0F172A"
+  response_border: "#0369A1"
+  status_bar_bg: "#F1F5F9"
+  status_bar_text: "#475569"
+  status_bar_strong: "#0369A1"
+  completion_menu_bg: "#F1F5F9"
+  selection_bg: "#DBEAFE"
+  voice_status_bg: "#F1F5F9"
+branding:
+  agent_name: "Linh"
+  welcome: "Linh ready — Personal AI Engineering Agent of Linh Nguyen. Type your message or /help for commands."
+  goodbye: "Linh signing off ⚡"
+  response_label: " ⚡ Linh "
+  prompt_symbol: "❯"
+  help_header: "(⚡) Available Commands"
+spinner:
+  waiting_faces: ["(⚡)", "(⌬)", "(▚)", "(⚙)", "(<>)"]
+  thinking_faces: ["(⚡)", "(⚙)", "(⌬)", "(▞)", "(<>)"]
+  thinking_verbs:
+    - "inspecting the repo"
+    - "tracing the call path"
+    - "reading the diff"
+    - "running the tests"
+    - "checking the premise"
+    - "profiling the hot path"
+    - "reviewing the invariants"
+    - "wiring the tools"
+tool_prefix: "⚡"
+banner_hero: |
+  [#22D3EE]      ╔═══════════════╗[/]
+  [#22D3EE]      ║  ▓▓▓▓▓▓▓▓▓▓▓  ║[/]
+  [#38BDF8]      ║   ▓ Linh ▓    ║[/]
+  [#38BDF8]      ║   ▓▓▓▓▓▓▓▓▓   ║[/]
+  [#2563EB]      ╚═══════════════╝[/]
+banner_logo: |
+  [bold #38BDF8]██╗      ██╗ ███╗   ██╗ ██╗  ██╗[/]
+  [bold #38BDF8]██║      ██║ ████╗  ██║ ██║  ██║[/]
+  [#22D3EE]██║      ██║ ██╔██╗ ██║ ███████║[/]
+  [#22D3EE]██║      ██║ ██║╚██╗██║ ██╔══██║[/]
+  [#2563EB]███████╗ ██║ ██║ ╚████║ ██║  ██║[/]
+  [#2563EB]╚══════╝ ╚═╝ ╚═╝  ╚═══╝ ╚═╝  ╚═╝[/]
